@@ -1,4 +1,6 @@
 <?php
+include "includes/header.php";
+
 $u_name = "metuge";
 $p_word = "password";
 
@@ -10,7 +12,7 @@ if (isset($_POST["submit"])) {
 
   if ($name && $password) {
     if ($name == $u_name && $password == $p_word) {
-      echo 'User: <spam style="color:red">' . $name . '<br> Logged In successfully</spam>';
+      loginUser();
     } elseif ($name == $u_name) {
       echo '<spam style="color:red">Wrong Password. Try Again!</spam>';
     } else {
