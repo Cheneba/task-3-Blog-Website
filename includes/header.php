@@ -20,13 +20,13 @@ include "./functions.php";
     <div class="nav-header">
       <div class="left">
         <spam id="logo"><a href="/blog-website/index.php">Tharty</a></spam>
-        <div id="logo-line"></div>
+        <div id="line-seperator"></div>
         <spam>Innovative Ideas</spam>
       </div>
       <div class="right">
-        <spam><button>Log In</button></spam>
-        <spam><button>Log Out</button></spam>
-        <spam><button>Signup</button></spam>
+        <spam><a href="../login.php"><button>Log In</button></a></spam>
+        <spam><a href="../logout.php"><button>Log Out</button></a></spam>
+        <spam><a href="../login.php"><button>Sign up</button></a></spam>
       </div>
     </div>
   </div>
