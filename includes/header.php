@@ -17,9 +17,10 @@ include "./functions.php";
 
 <body>
   <div class="header">
-    <div class="nav">
+    <div class="nav-header">
       <div class="left">
-        <spam><a href="/blog-website/index.php">Tharty</a></spam>
+        <spam id="logo"><a href="/blog-website/index.php">Tharty</a></spam>
+        <div id="logo-line"></div>
         <spam>Innovative Ideas</spam>
       </div>
       <div class="right">
