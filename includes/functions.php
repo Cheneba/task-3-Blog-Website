@@ -2,7 +2,7 @@
 
 function loginUser()
 {
-  header("Location: ../dashboard.php");
+  header("Location: /blog-website/dashboard.php");
 }
 
 function logoutUser()

@@ -1,4 +1,5 @@
 <?php
+include "includes/header.php";
 
 $u_name = "metuge";
 $p_word = "password";
@@ -8,10 +9,9 @@ if (isset($_POST["submit"])) {
   $name = htmlspecialchars($_POST["name"]);
   // $email = htmlspecialchars($_POST["email"]);
   $password = htmlspecialchars($_POST["password"]);
-  var_dump($name, $password);
   if ($name && $password) {
     if ($name == $u_name && $password == $p_word) {
-      loginUser();
+      header("Location: /blog-website/dashboard.php");
     } elseif ($name == $u_name) {
       $err = '<spam style="color:red">Wrong Password. Try Again!</spam>';
     } else {
@@ -19,7 +19,6 @@ if (isset($_POST["submit"])) {
     }
   }
 }
-include "includes/header.php";
 
 ?>
 
