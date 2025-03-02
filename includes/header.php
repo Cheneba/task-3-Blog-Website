@@ -1,6 +1,6 @@
 <?php
 include "./functions.php";
-
+$blog_name = "Tharty";
 ?>
 
 
@@ -19,7 +19,7 @@ include "./functions.php";
   <div class="header">
     <div class="nav-header">
       <div class="left">
-        <spam id="logo"><a href="/blog-website/index.php">Tharty</a></spam>
+        <spam id="logo"><a href="/blog-website/index.php"><?php echo $blog_name ?></a></spam>
         <div id="line-seperator"></div>
         <spam>Innovative Ideas</spam>
       </div>
