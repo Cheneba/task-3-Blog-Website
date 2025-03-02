@@ -24,9 +24,9 @@ include "./functions.php";
         <spam>Innovative Ideas</spam>
       </div>
       <div class="right">
-        <spam><a href="../login.php"><button>Log In</button></a></spam>
-        <spam><a href="../logout.php"><button>Log Out</button></a></spam>
-        <spam><a href="../login.php"><button>Sign up</button></a></spam>
+        <spam><a href="/blog-website/login.php"><button>Log In</button></a></spam>
+        <spam><a href="/blog-website/logout.php"><button>Log Out</button></a></spam>
+        <spam><a href="/blog-website/login.php"><button>Sign up</button></a></spam>
       </div>
     </div>
   </div>

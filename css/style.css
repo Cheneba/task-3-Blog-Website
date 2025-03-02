@@ -12,6 +12,7 @@ body {
   filter: brightness(70%);
 }
 
+/* HEADER SECTION */
 .nav-header {
   width: 100%;
   height: 120px;
@@ -71,6 +72,8 @@ body {
   height: 35px;
   top: 5px;
 }
+
+/* FOOTER SECTION */
 
 .footer {
   height: 120px;
