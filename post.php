@@ -1,26 +1,38 @@
 <?php
 require "includes/posts.php";
 include "includes/header.php";
+$id = $id ?: 4;
+$post = null;
+foreach ($posts_arr as $p) {
+  if ($p["id"] == $id) {
+    $post = $p;
+    break;
+  }
+}
 ?>
 
 
 <section class="post-section-1">
   <div class="blog-post-title">
-    <spam>Blog Post</spam>
+    <spam>Blog</spam>
     <div class="line-seperator"></div>
-    <spam><?php echo $posts->$name ?: "Innovative Ideas"; ?></spam>
+    <spam><?php echo $post['title'] ?: "Innovative Ideas"; ?></spam>
   </div>
 </section>
 
 
 <section class="post-section-2">
   <div class="description">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quod sed dolore, harum nostrum possimus illo
-      corrupti ratione ipsa doloribus mollitia aspernatur dicta sequi cupiditate eius vel maxime, aperiam adipisci!</p>
-    <div class="img"></div>
+
+    <?php echo $post["content"] ?>
+
+
   </div>
+  <br>
+  <br>
+  <br>
   <div class="end-post">
-    <?php echo "Post made on $date, by $author" ?>
+    <?php echo "Post made on " . $post["date"] . ", by " . $post["author"] ?>
   </div>
 </section>
 
