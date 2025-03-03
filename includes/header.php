@@ -1,6 +1,7 @@
 <?php
 include "./functions.php";
 $blog_name = "Tharty";
+$id = null;
 ?>
 
 
