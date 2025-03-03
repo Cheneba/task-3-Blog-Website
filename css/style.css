@@ -171,6 +171,7 @@ body {
 
 /* SECTION 3 */
 /* Sample Post text */
+
 .index-section-3 > .sample-posts > .heading {
   width: 80%;
   margin-bottom: 30px;
@@ -228,7 +229,7 @@ body {
 
 .index-section-3 > .sample-posts > .holder > .sample-post {
   width: 330px;
-  height: 360px;
+  height: fit-content;
   background-color: inherit;
   margin-left: 50px;
   margin-top: 50px;
@@ -304,7 +305,7 @@ body {
   display: flex;
   border: 3px solid white;
   margin: 35px 9.5%;
-  font-size: 2.7rem;
+  font-size: 2rem;
   padding-left: 20px;
   padding-top: 15px;
 }
@@ -319,13 +320,13 @@ body {
 
 @media only screen and (max-width: 950px) {
   .blog-post-title {
-    font-size: 2.9rem;
+    font-size: 1.8rem;
   }
 }
 
 @media only screen and (max-width: 800px) {
   .blog-post-title {
-    font-size: 2rem;
+    font-size: 1.2rem;
     height: 70px;
   }
   .blog-post-title > .line-seperator {
