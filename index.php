@@ -2,6 +2,7 @@
 
 // header("Location: ./login.php");
 include "includes/header.php";
+include "includes/posts.php";
 ?>
 
 <section class="index-section-1">
@@ -31,34 +32,17 @@ include "includes/header.php";
       <hr>
     </div>
     <div class="holder">
-      <div class="sample-post">
-        <p class="title">Title</p>
-        <div class="line-hor"></div>
-        <p class="brief">Briefing</p>
-        <p class="auth-date">
-          <spam>Author</spam>
-          <spam>Date</spam>
-        </p>
-      </div>
-      <div class="sample-post">
-        <p class="title">Title</p>
-        <div class="line-hor"></div>
-        <p class="brief">Briefing</p>
-        <p class="auth-date">
-          <spam>Author</spam>
-          <spam>Date</spam>
-        </p>
-      </div>
-      <div class="sample-post">
-        <p class="title">Title</p>
-        <div class="line-hor"></div>
-        <p class="brief">Briefing</p>
-        <p class="auth-date">
-          <spam>Author</spam>
-          <spam>Date</spam>
-        </p>
-      </div>
-
+      <?php for ($i = 0; $i < 3; $i++): ?>
+        <div class="sample-post">
+          <p class="title"><?php echo $posts_arr[$i]["title"] ?></p>
+          <div class="line-hor"></div>
+          <p class="brief"><?php echo $posts_arr[$i]["description"] ?></p>
+          <p class="auth-date">
+            <spam>Author: <?php echo $posts_arr[$i]["author"] ?></spam>
+            <spam>Date: <?php echo $posts_arr[$i]["date"] ?></spam>
+          </p>
+        </div>
+      <?php endfor; ?>
     </div>
     <div class="index-view-posts">
       <a href="login.php"><button>View All Posts</button></a>
