@@ -11,6 +11,12 @@ if (isset($_POST["submit"])) {
   $password = htmlspecialchars($_POST["password"]);
   if ($name && $password) {
     if ($name == $u_name && $password == $p_word) {
+      if (session_status() !== PHP_SESSION_ACTIVE) {
+        session_start();
+      }
+      $_SESSION['username'] = $name;
+      $_SESSION['status'] = "logged in";
+      $_SESSION['message'] = "Login Successful";
       header("Location: /blog-website/dashboard.php");
     } elseif ($name == $u_name) {
       $err = '<spam style="color:red">Wrong Password. Try Again!</spam>';
