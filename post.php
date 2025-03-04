@@ -1,7 +1,7 @@
 <?php
 require "includes/posts.php";
 include "includes/header.php";
-$id = $id ?: 4;
+$id = base64_decode($_GET["id"]) ?: 4;
 $post = null;
 foreach ($posts_arr as $p) {
   if ($p["id"] == $id) {
