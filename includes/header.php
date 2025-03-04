@@ -2,9 +2,6 @@
 include "./functions.php";
 $blog_name = "Tharty";
 $id = null;
-if (session_status() !== PHP_SESSION_ACTIVE) {
-  session_start();
-}
 ?>
 
 
