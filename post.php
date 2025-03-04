@@ -5,7 +5,12 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 }
 require "includes/posts.php";
 include "includes/header.php";
+
+
+// Gets the $id from the url
 $id = base64_decode($_GET["id"]) ?: 4;
+
+// Selects the specific post
 $post = null;
 foreach ($posts_arr as $p) {
   if ($p["id"] == $id) {
@@ -13,6 +18,9 @@ foreach ($posts_arr as $p) {
     break;
   }
 }
+
+// sets a cookie
+setcookie("post-preference", $_GET["id"], time() + 86400);
 ?>
 
 
