@@ -1,4 +1,8 @@
 <?php
+
+if (session_status() !== PHP_SESSION_ACTIVE) {
+  session_start();
+}
 require "includes/posts.php";
 include "includes/header.php";
 $id = base64_decode($_GET["id"]) ?: 4;
