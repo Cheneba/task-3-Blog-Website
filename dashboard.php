@@ -1,7 +1,3 @@
-<?php include "includes/header.php"; ?>
-<?php include "includes/posts.php"; ?>
-
-
 <?php
 
 if (session_status() !== PHP_SESSION_ACTIVE) {
@@ -14,6 +10,10 @@ if ($_SESSION['status'] !== "logged in") {
 }
 
 ?>
+<?php include "includes/header.php"; ?>
+<?php include "includes/posts.php"; ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
