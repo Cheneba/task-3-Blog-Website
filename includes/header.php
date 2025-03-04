@@ -2,6 +2,9 @@
 include "./functions.php";
 $blog_name = "Tharty";
 $id = null;
+if (session_status() !== PHP_SESSION_ACTIVE) {
+  session_start();
+}
 ?>
 
 
@@ -25,9 +28,29 @@ $id = null;
         <spam>Innovative Ideas</spam>
       </div>
       <div class="right">
-        <spam><a href="/blog-website/login.php"><button>Log In</button></a></spam>
-        <spam><a href="/blog-website/logout.php"><button>Log Out</button></a></spam>
-        <spam><a href="/blog-website/login.php"><button>Sign up</button></a></spam>
+        <spam>
+          <a <?php
+              if ($_SESSION['status'] === "logged in") echo 'href="/blog-website/dashboard.php"';
+              else echo 'href="/blog-website/login.php"';
+              ?>>
+            <button>
+
+              <?php echo $_SESSION['status'] === "logged in" ? "Home" : "Log in";  ?>
+            </button>
+          </a>
+        </spam>
+
+        <spam>
+          <a <?php
+              if ($_SESSION['status'] === "logged in") echo 'href="/blog-website/logout.php"';
+              else echo 'href="/blog-website/login.php"';
+              ?>>
+            <button>
+              <?php echo $_SESSION['status'] === "logged in" ? "Log out" : "Sign up";  ?>
+            </button>
+          </a>
+        </spam>
+
       </div>
     </div>
   </div>
