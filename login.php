@@ -57,6 +57,15 @@ if (isset($_POST["submit"])) {
     font-size: 1.2rem;
   }
 
+  .login-holder>.container>form>label>#checkbox {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    padding-left: 0;
+    font-size: 1rem;
+    background-color: black;
+  }
+
   .login-holder>.container>form>button {
     border: none;
     background: none;
@@ -107,6 +116,10 @@ if (isset($_POST["submit"])) {
         <?php echo $err; ?>
       <?php endif; ?>
       <br />
+      <label>
+        Remember me
+        <input type="checkbox" id="checkbox">
+      </label>
       <button type="submit" name="submit">Submit</button>
     </form>
   </div>
