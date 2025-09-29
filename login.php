@@ -1,7 +1,7 @@
 <?php
 include "includes/header.php";
 
-$u_name = "metuge";
+$u_name = "user";
 $p_word = "password";
 $err = '';
 
@@ -17,7 +17,7 @@ if (isset($_POST["submit"])) {
       $_SESSION['username'] = $name;
       $_SESSION['status'] = "logged in";
       $_SESSION['message'] = "Login Successful";
-      header("Location: /blog-website/dashboard.php");
+      header("Location: /dashboard.php");
     } elseif ($name == $u_name) {
       $err = '<spam style="color:red">Wrong Password. Try Again!</spam>';
     } else {
@@ -121,6 +121,7 @@ if (isset($_POST["submit"])) {
       <?php if ($err): ?>
         <?php echo $err; ?>
       <?php endif; ?>
+      <span>Hint, Username: user <br> Password: password</span>
       <br />
       <label>
         Remember me

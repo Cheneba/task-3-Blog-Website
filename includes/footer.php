@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="nav-footer">
     <div class="top">
-      <spam><a href="/blog-website/post.php">Posts</a></spam>
+      <spam><a href="/post.php">Posts</a></spam>
     </div>
     <div class="bottom">
       <spam><?php echo date("Y") . ', ' . $blog_name; ?> . &copy; All rights reserved</spam>

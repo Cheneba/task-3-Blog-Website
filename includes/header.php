@@ -20,15 +20,15 @@ $id = null;
   <div class="header">
     <div class="nav-header">
       <div class="left">
-        <spam id="logo"><a href="/blog-website/index.php"><?php echo $blog_name ?></a></spam>
+        <spam id="logo"><a href="/index.php"><?php echo $blog_name ?></a></spam>
         <div id="line-seperator"></div>
         <spam>Innovative Ideas</spam>
       </div>
       <div class="right">
         <spam>
           <a <?php
-              if ($_SESSION['status'] === "logged in") echo 'href="/blog-website/dashboard.php"';
-              else echo 'href="/blog-website/login.php"';
+              if ($_SESSION['status'] === "logged in") echo 'href="/dashboard.php"';
+              else echo 'href="/login.php"';
               ?>>
             <button>
 
@@ -39,8 +39,8 @@ $id = null;
 
         <spam>
           <a <?php
-              if ($_SESSION['status'] === "logged in") echo 'href="/blog-website/logout.php"';
-              else echo 'href="/blog-website/login.php"';
+              if ($_SESSION['status'] === "logged in") echo 'href="/logout.php"';
+              else echo 'href="/login.php"';
               ?>>
             <button>
               <?php echo $_SESSION['status'] === "logged in" ? "Log out" : "Sign up";  ?>
