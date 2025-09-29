@@ -1,4 +1,4 @@
-<img width="1904" height="921" alt="image" src="https://github.com/user-attachments/assets/d6f79665-58ed-4acb-a43d-58d575fbbb7b" /># Blog Website
+# Blog Website
 
 ## Procedure
 1. Clone this repository,
@@ -13,3 +13,4 @@ php -S localhost:8000
 <img width="1904" height="921" alt="Screenshot from 2025-09-29 17-39-59" src="https://github.com/user-attachments/assets/f007df09-578a-4723-a7b7-22f476a63067" />
 <img width="1904" height="921" alt="Screenshot from 2025-09-29 17-39-38" src="https://github.com/user-attachments/assets/475bdd38-32d6-4ebb-9971-2eb90d1cadb2" />
 <img width="1904" height="921" alt="Screenshot from 2025-09-29 17-40-19" src="https://github.com/user-attachments/assets/cb7fd095-0f60-4417-8bd5-13f50dcfd37a" />
+
